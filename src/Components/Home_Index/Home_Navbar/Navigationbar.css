@@ -1,0 +1,105 @@
+/* Prevent Horizontal Scrolling */
+
+
+.home-navbar-button {
+  background-color: #0d2f53; /* Bootstrap primary blue */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 4px 8px; /* Slightly increased padding for better clickability */
+  font-size: 0.9rem; /* Adjusted font size */
+  line-height: 1.0; /* Maintain reasonable height */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  cursor: pointer; /* Cursor on hover */
+  margin-left: 10px; /* Space between buttons */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.home-navbar-button:hover {
+  background-color: #18589c; /* Darker blue on hover */
+  transform: scale(0.9); /* Slightly enlarge on hover */
+}
+
+/* Navbar Styles */
+.home-navbar {
+    padding: 0px; /* Remove padding to eliminate space */
+    background-color: #0d2f53;
+}
+
+/* Align items in the navbar */
+.navbar-nav {
+  margin-left: 0px; /* Align items to the left */
+}
+
+.home-navbar .nav-link {
+  color: white !important; /* Ensure text color is white */
+  padding: 4px 4px; /* Add padding for space around the text */
+  margin: 0px 5; /* Add horizontal margin to create space between links */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+
+
+
+/* Search Form */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center; /* Center align vertically */
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.search-input {
+  padding: 5px 5px; /* Padding for input */
+  font-size: 1rem; /* Font size */
+  border: 1px solid #530fd3; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  width: 200px; /* Adjust width as needed */
+  height: 35px;
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.search-input:focus {
+  border-color: #01080f; /* Change border color on focus */
+}
+
+/* Hide dropdown indicators for icon dropdowns */
+.icon-dropdown .dropdown-toggle::after {
+  display: none; /* Hides the dropdown indicator */
+}
+
+/* Icons Container */
+.nav-icons {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+/* Icon Styles */
+.icon-container,
+.profile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* Set a consistent width for all icons */
+  height: 30px; /* Set a consistent height for all icons */
+  background-color: transparent; /* No background for admin icon */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 3px; /* Reduced space between icons */
+}
+
+/* Specific styles for the profile icon to make it circular */
+.profile-icon {
+  border-radius: 50%; /* Make it round */
+  background-color: #edf1f5; /* Background color */
+}
+
+/* Icon Font Size */
+.icon-container i,
+.profile-icon i {
+  font-size: 1.2rem; /* Slightly smaller icon size */
+  color: white; /* Icon color */
+}

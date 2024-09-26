@@ -1,0 +1,30 @@
+  
+  
+  .web-index-buttons {
+    background-color: white;
+    color: rgb(11, 1, 1);
+    border: none;
+    padding: 5px;
+    /* Reduced padding */
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    /* Reduced font size */
+    border-radius: 10px;
+    /* Rounded corners for a modern look */
+  }
+
+  .web-index-navbar {
+    height: 45px;
+    /* Reduced height for a slimmer navbar */
+    padding: 0px;
+    /* Remove padding to eliminate space */
+    margin: 0px;
+    background-color: #0d2f53;
+      /* Remove default margin */
+  }
+
+  .web-index-d-flex {
+    display: flex;
+    gap: 10px; /* Adjust this value for the desired spacing */
+  }

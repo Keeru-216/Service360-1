@@ -1,0 +1,60 @@
+/* src/SideBar.css */
+.sidebar-container {
+  display: flex;
+  height: 100vh;
+  padding: 5px;
+}
+
+.sidebar {
+  background-color:#f7f6f1;
+  padding: 5px;
+  transition: width 0.3s ease;
+  overflow: hidden; /* Prevent content overflow */
+  border-right: 2px solid #ccc; /* Method 1: Add a right border */
+  margin-top: 30px; 
+}
+
+/* Uncomment if using Method 2: Pseudo-element approach */
+/*
+
+*/
+
+.sidebar.expanded {
+  width: 200px; /* Width when expanded */
+}
+
+.sidebar.collapsed {
+  width: 10px; /* Width when collapsed */
+}
+
+.toggle-icon {
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: left; /* Center the icon */
+  font-size: 2rem; /* Increase size for visibility */
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: #dddddd; /* Highlight on hover */
+}
+
+.sidebar-item.active {
+  background-color: #8cb0d8; /* Active item background */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 25px;
+  background-color: #fff;
+}
